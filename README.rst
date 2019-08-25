@@ -11,6 +11,6 @@ Linux-Map
 ---------
 在此附带上一张学习图，要是有版权问题麻烦告知一声，谢谢
 
-.. image:: https://github.com/wangsong19/linux-optimize/tree/master/assets/linux-tools.jpeg
+.. image:: https://github.com/wangsong19/linux-optimize/blob/master/assets/linux-tools.jpeg
     :alt: linux-tools-map
 
