@@ -148,3 +148,33 @@ cpu在单位时间内的使用情况，用%表示。一般的指标有%sys，%us
     #ab#
     [apache bench, http压力测试工具]
 
+    >>>
+    $ ab -c 10 -n 50 http://xxx.xxx.xxx.xxx:8888/
+    [并发10个请求，共50个请求]
+    This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+    ...
+    Server Software:        BWS/1.1
+    Server Hostname:        39.156.66.14
+    Server Port:            80
+    HTML transferred:       7689880 bytes
+    ...
+    Requests per second:    24.07 [#/sec] (mean)
+    Time per request:       415.386 [ms] (mean)
+    Time per request:       41.539 [ms] (mean, across all concurrent requests)
+    ...
+    
+    #perf & perf-record & perf-report#
+    [perf采样分析 根据top采样进程数据进行分析]
+    
+    >>>
+    $ perf top -g -p 32122
+    [直接开启采样而不做记录: 采样指令top -p指定进程号为32122， -g开启调用关系]
+    
+    Samples: 55  of event 'cpu-clock', Event count (approx.): 7950039
+    Children      Self  Shared Object      Symbol
+    -   36.79%    36.79%  [kernel]           [k] finish_task_switch
+      26.58% 0x484d75c08548008b
+      14.41% runtime.goexit
+      ...
+    
+
