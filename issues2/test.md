@@ -23,7 +23,7 @@
 [anaconda连接][1]
 
 注脚的用法Markdown[^1]可以效率书写文档。
-直接转换成HTML[^2].
+直接转换成HTML[^2]。
 
 [锚点的起始点](#分割线使用)
 
@@ -78,4 +78,4 @@ int main(void) {
 [0]:http://www.google.com
 [1]:http://www.anaconda.com
 [^1]:Markdown是一种纯文本标记语言
-[^2]:HyperText Markup Language 超文本标记语言
+[^2]:HyperText-Markup-Language超文本标记语言
