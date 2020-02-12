@@ -21,16 +21,15 @@
 超链接 [请点击](https://www.baidu.com "描述这个超链接")
 [google连接文字][0]
 [anaconda连接][1]
-[0]:http://www.google.com
-[1]:http://www.anaconda.com
 
 注脚的用法Markdown[^1]可以效率书写文档，直接转换成HTML[^2]
-[^1]:Markdown是一种纯文本标记语言
-[^2]:HyperText Markup Language 超文本标记语言
 
 ##锚点 你的名字请查看详情{#1}
+
+
 <http://www.google.com>
 &lt;http://www.google.com&gt;&emsp;&emsp;
+
 
 * 无序列表1
 + 无序列表2
@@ -45,8 +44,6 @@
 
 ![没有图片就替换为这段描述(非必要的)](http://google.com/asset/img/1.gif "图片悬停时显示文字")
 
->>> 请问mackdown怎么用(但是多级嵌套引用没那么必要)
->> 嵌套引用只能是从高层往底层嵌套
 > 引用(允许只在段落第一行)
 	这是跟在后面的整段文字
 
@@ -70,3 +67,12 @@ int main(void) {
 
 分割线使用-------
 ---------------------------------------
+
+
+
+
+[0]:http://www.google.com
+[1]:http://www.anaconda.com
+
+[^1]:Markdown是一种纯文本标记语言
+[^2]:HyperText Markup Language 超文本标记语言
